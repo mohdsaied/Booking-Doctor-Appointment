@@ -11,9 +11,16 @@ public class AdminOrUser {
 
     @GetMapping("/admin")
     public String getName() {
-        return "AdminOrUser";
+        return "Only For AdminOrUser Role................";
     }
 
+    @GetMapping("/user")
+    public String getRole() {
+        return "Only for User Role...............";
+    }
 
-
+    @GetMapping("doctor")
+    public String getDoctor() {
+        return "Only For Doctor Role..........";
+    }
 }
